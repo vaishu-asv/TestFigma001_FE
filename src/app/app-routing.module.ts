@@ -3,6 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'test', loadChildren: () => import('./test/test.module').then(m => m.TestModule)},
+
+  { path: 'modules', loadChildren: () => import('./modules/modules.module').then(m => m.ModulesModule)},
+
+  { path: 'core', loadChildren: () => import('./core/core.module').then(m => m.CoreModule)},
+
+  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)},
+
+  { path: 'share', loadChildren: () => import('./share/share.module').then(m => m.ShareModule)},
 ];
 
 @NgModule({
