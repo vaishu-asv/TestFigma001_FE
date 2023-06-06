@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common';
 import { TestRoutingModule } from './test-routing.module';
 import { CreatewhatifComponent } from './createwhatif/createwhatif.component';
 import { ShareComponent } from './share/share.component';
+import { BaselineComponent } from './baseline/baseline.component';
 
 
 @NgModule({
   declarations: [
     CreatewhatifComponent,
-    ShareComponent
+    ShareComponent,
+    BaselineComponent
   ],
   imports: [
     CommonModule,
